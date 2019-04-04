@@ -21,7 +21,6 @@ $(function() {
       $("#nav_bar nav a.active").removeClass("active");
       $(this).addClass("active");
     } //Adding active class for scrollspy to work
-    event.preventDefault(); //Preventing any default behavior by the browser
   });
 
   //Toggle navbar when in mobile view
@@ -148,7 +147,6 @@ $(function() {
     document.addEventListener("DOMContentLoaded", function () {
         let currentYear = new Date().getFullYear();
         let targetDate = new Date(currentYear + 0, 5);
-        console.log(targetDate);
         let onStart = () => {
             document.querySelectorAll('.countdown-item').forEach(item => item.classList.add('show'))
         }
